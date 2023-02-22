@@ -4,7 +4,6 @@
   "description": "Redirect from YouTube Shorts links to normal video link",
   "version": "1.0.0",
   "permissions": [
-    "webRequest",
     "declarativeNetRequest",
     "declarativeNetRequestFeedback"
   ],
