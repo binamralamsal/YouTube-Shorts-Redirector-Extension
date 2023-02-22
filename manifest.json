@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts Redirector",
+  "description": "Redirect from YouTube Shorts links to normal video link",
+  "version": "1.0.0",
+  "permissions": [
+    "webRequest",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "host_permissions": ["*://*.youtube.com/short/*", "*://*.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["client.js"]
+    }
+  ]
+}
