@@ -7,6 +7,12 @@
     "declarativeNetRequest",
     "declarativeNetRequestFeedback"
   ],
+  "icons": {
+    "32": "logos/Logo-32.png",
+    "49": "logos/Logo-49.png",
+    "64": "logos/Logo-64.png",
+    "128": "logos/Logo-128.png"
+  },
   "declarative_net_request": {
     "rule_resources": [
       {
